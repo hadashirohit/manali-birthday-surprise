@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:radial-gradient(circle at top left,#ffe5f0,transparent 35%),radial-gradient(circle at bottom right,#e9dcff,transparent 35%),#fff7fb;color:#3c2634;overflow-x:hidden}
+button{font-family:inherit;cursor:pointer}.hidden{display:none!important}
+.screen{min-height:100vh;width:100%;display:flex;align-items:center;justify-content:center;padding:40px 20px;position:relative;overflow:hidden}
+.start-screen{background:radial-gradient(circle at 20% 20%,#ffd6e7,transparent 30%),radial-gradient(circle at 80% 80%,#ddd0ff,transparent 30%)}
+.start-content{text-align:center;max-width:700px;animation:fadeUp 1.2s ease}
+.small-text{color:#a65b80;font-size:14px;letter-spacing:2px;margin-bottom:25px}
+.start-content h1{font-family:'DM Serif Display',serif;font-size:clamp(70px,12vw,150px);line-height:.85;color:#3d2734}
+.start-content h1 span{color:#d94f85}
+.start-content p{margin:35px auto;max-width:500px;line-height:1.8;color:#765d6b}
+.primary-btn{border:none;padding:15px 28px;border-radius:50px;background:linear-gradient(135deg,#e95d91,#b967d9);color:white;font-size:15px;font-weight:600;box-shadow:0 10px 30px rgba(214,83,135,.25);transition:.3s;position:relative;z-index:20}
+.primary-btn:hover{transform:translateY(-4px);box-shadow:0 15px 35px rgba(214,83,135,.35)}
+.music-btn{position:fixed;right:20px;top:20px;width:45px;height:45px;border-radius:50%;border:none;background:white;box-shadow:0 5px 20px rgba(0,0,0,.12);z-index:100}
+.birthday-content{text-align:center;max-width:800px;animation:fadeUp 1s ease}
+.sparkle{font-size:30px;margin-bottom:20px;animation:sparkle 2s infinite}
+.tiny-title{font-size:12px;letter-spacing:3px;color:#b45b82;font-weight:600;margin-bottom:15px}
+.birthday-content h1{font-family:'DM Serif Display',serif;font-size:clamp(50px,8vw,100px);line-height:1;margin-bottom:30px}
+.birthday-content h1 span,.section-heading span,.letter-container h1 span,.final-content h1 span{color:#d95188}
+.birthday-text{color:#765d6b;font-size:18px}.cake{font-size:110px;margin:30px;animation:cakeBounce 2s infinite}
+.photo-section{flex-direction:column;gap:25px}.section-heading{text-align:center;max-width:700px}.section-heading h2{font-family:'DM Serif Display',serif;font-size:clamp(40px,7vw,70px);line-height:1.05;margin-bottom:15px}.section-heading p:not(.tiny-title){color:#765d6b}
+.mySwiper{width:min(90vw,430px);padding:20px 0 55px}.swiper-slide{display:flex;justify-content:center}
+.photo-card{width:100%;padding:12px;background:white;border-radius:22px;box-shadow:0 15px 40px rgba(92,49,74,.15);transform:rotate(-1deg);transition:.4s}
+.swiper-slide-active .photo-card{transform:rotate(0deg) scale(1.03)}
+.photo-card img{width:100%;height:470px;object-fit:cover;border-radius:15px;display:block}.photo-caption{text-align:center;padding:15px 8px 8px;font-family:'DM Serif Display',serif;font-size:19px;color:#5b3a4a}
+.swiper-button-next,.swiper-button-prev{color:#d8558a!important;transform:scale(.7)}.swiper-pagination-bullet-active{background:#d8558a!important}
+#reasonsScreen{flex-direction:column;gap:35px}.reasons-container{display:grid;grid-template-columns:repeat(2,minmax(180px,280px));gap:20px}
+.reason-card{background:rgba(255,255,255,.8);padding:30px;border-radius:25px;text-align:center;box-shadow:0 10px 30px rgba(75,40,65,.08);transition:.4s}.reason-card:hover{transform:translateY(-8px) rotate(1deg)}
+.reason-icon{font-size:40px;margin-bottom:15px}.reason-card h3{margin-bottom:10px}.reason-card p{color:#765d6b;font-size:14px;line-height:1.7}
+.invitation-screen{background:radial-gradient(circle at 10% 20%,#ffe1ed,transparent 30%),radial-gradient(circle at 90% 80%,#e6dcff,transparent 30%)}
+.invitation-card{width:min(700px,95vw);padding:50px 30px;text-align:center;background:rgba(255,255,255,.78);backdrop-filter:blur(15px);border-radius:35px;box-shadow:0 25px 70px rgba(81,43,69,.15);animation:fadeUp 1s ease}
+.temple-icon{font-size:70px;margin-bottom:15px;animation:templeFloat 3s infinite}.invitation-card h1{font-family:'DM Serif Display',serif;font-size:clamp(45px,8vw,75px);line-height:1;margin-bottom:25px}.invitation-card h1 span{color:#d65188}
+.invitation-text{color:#765d6b;line-height:1.8}.question{margin:35px auto;max-width:500px}.question h2{font-family:'DM Serif Display',serif;font-size:28px;line-height:1.4}
+.answer-area{height:100px;display:flex;justify-content:center;align-items:center;gap:25px;position:relative}.yes-btn,.no-btn{border:none;border-radius:50px;padding:14px 30px;font-weight:600;font-size:16px}.yes-btn{background:#d95488;color:white;box-shadow:0 8px 25px rgba(217,84,136,.3);transition:.3s}.yes-btn:hover{transform:scale(1.1)}
+.no-btn{background:#eee;color:#555;position:relative;transition:left .2s,top .2s}.no-message{min-height:25px;margin-top:10px;color:#d95488;font-size:14px}
+.celebration{text-align:center;animation:fadeUp 1s ease}.big-heart{font-size:110px;animation:heartBeat 1.2s infinite}.celebration h1{font-family:'DM Serif Display',serif;font-size:clamp(60px,10vw,100px);color:#d85187}.celebration h2{margin-bottom:10px}.celebration>p{color:#765d6b;margin-bottom:30px}
+.plan-card{width:min(500px,90vw);background:white;border-radius:25px;padding:20px;margin:0 auto 35px;box-shadow:0 15px 40px rgba(75,40,65,.1)}.plan-card div{display:flex;gap:15px;align-items:center;padding:12px;border-bottom:1px solid #f1e4eb}.plan-card div:last-child{border-bottom:none}
+.letter-section{align-items:flex-start;padding-top:80px}.letter-container{text-align:center;width:min(700px,95vw)}.letter-container h1{font-family:'DM Serif Display',serif;font-size:clamp(50px,8vw,80px);margin-bottom:40px}
+.envelope{width:280px;height:190px;margin:30px auto;position:relative;perspective:1000px}.envelope-back{position:absolute;width:100%;height:100%;background:#ef91b2;border-radius:8px;box-shadow:0 15px 35px rgba(90,40,65,.18)}
+.envelope-paper{position:absolute;width:85%;height:80%;left:7.5%;top:8%;background:#fffaf2;display:flex;align-items:center;justify-content:center;font-size:35px;transition:1s}.envelope-front{position:absolute;bottom:0;left:0;border-left:140px solid transparent;border-right:140px solid transparent;border-bottom:100px solid #e77fa6}
+.envelope-flap{position:absolute;top:0;left:0;border-left:140px solid transparent;border-right:140px solid transparent;border-top:105px solid #f2a4bf;transform-origin:top;transition:1s;z-index:5}
+.envelope.open .envelope-flap{transform:rotateX(180deg)}.envelope.open .envelope-paper{transform:translateY(-100px);z-index:3}
+.real-letter{text-align:left;background:#fffaf2;padding:40px 30px;margin:40px auto;border-radius:5px;box-shadow:0 15px 45px rgba(70,40,40,.15);max-width:600px;line-height:1.9;color:#5c4a4d;animation:letterAppear 1s ease}.real-letter p{margin-bottom:20px}.letter-top{text-align:center;font-size:35px;margin-bottom:25px}.signature{text-align:right;font-family:'DM Serif Display',serif;font-size:20px;color:#c6507f}
+.final-screen{text-align:center;background:radial-gradient(circle at center,#ffe1ed,#eee3ff,#fff7fb)}.final-content{animation:fadeUp 1.2s ease}.fireworks{font-size:45px;margin-bottom:25px;animation:sparkle 2s infinite}.final-content h1{font-family:'DM Serif Display',serif;font-size:clamp(55px,9vw,100px);line-height:1.05;margin-bottom:30px}.final-content>p{color:#765d6b;font-size:18px}.final-message{margin:25px auto;line-height:1.8;max-width:500px}.final-hearts{font-size:30px;margin:30px;animation:heartBeat 2s infinite}.secondary-btn{padding:12px 24px;border-radius:50px;border:1px solid #d56a94;background:transparent;color:#c34f7e;font-weight:600}
+.floating-hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.floating-heart{position:absolute;bottom:-50px;animation:floatHeart linear forwards;opacity:.6}
+.confetti{position:fixed;width:8px;height:14px;top:-20px;z-index:999;animation:confettiFall linear forwards;pointer-events:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}@keyframes sparkle{0%,100%{transform:scale(1);opacity:.7}50%{transform:scale(1.2);opacity:1}}@keyframes cakeBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}@keyframes templeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@keyframes heartBeat{0%,100%{transform:scale(1)}15%{transform:scale(1.15)}30%{transform:scale(1)}}@keyframes letterAppear{from{opacity:0;transform:translateY(50px) scale(.95)}to{opacity:1;transform:translateY(0) scale(1)}}@keyframes floatHeart{from{transform:translateY(0) rotate(0deg)}to{transform:translateY(-110vh) rotate(360deg)}}@keyframes confettiFall{from{transform:translateY(0) rotate(0)}to{transform:translateY(110vh) rotate(720deg)}}
+@media(max-width:600px){.screen{padding:30px 15px}.start-content h1{font-size:75px}.birthday-content h1{font-size:55px}.photo-card img{height:400px}.reasons-container{grid-template-columns:1fr;width:min(400px,90vw)}.invitation-card{padding:40px 20px}.question h2{font-size:23px}.envelope{transform:scale(.9)}.real-letter{padding:30px 22px}}
